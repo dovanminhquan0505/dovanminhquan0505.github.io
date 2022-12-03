@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav{
+    height:35px;
+    background: #141414;
+    margin-bottom: 5px;
+}
+
+nav .menu ul{
+    list-style: none;
+}
+
+nav .menu ul li{
+    float: left;
+    line-height: 35px;
+}
+
+nav .menu ul li a{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    border-right: 1px solid #ccc;
+    padding: 0 30px;
+    display: block;
+}
+
+nav .menu ul li a.active{
+    background: #1949b5;
+}
+
+nav .menu ul li a:hover{
+    color: #1949b5;
+    background-color: #fff;
+}
+
+nav .search {
+    line-height: 25px;
+    float: right;
+    padding-right: 25px;
+    justify-content: center;
+}
+
+.container .drop
+{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    box-shadow: inset 20px 2px 20px rgba(168, 42, 130, 0.05), 25px 35px 25px rgba(110, 18, 18, 0.05), 25px 30px 30px rgba(67, 151, 40, 0.05), inset -20px -20px 25px rgba(216, 33, 109, 0.9);
+    transition: 0.8s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38% 62% 20% 80% / 35% 44% 56% 65%  ;
+}
+
+.container .drop:hover{
+    border-radius: 50%;
+}
+
+.container .drop:before{
+    content: '';
+    position: absolute;
+    top: 70px;
+    left: 95px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: rgb(241, 132, 59);
+    opacity: 0.9;
+}
+
+.container .drop:after{
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(238, 145, 31);
+    opacity: 0.9;
+}
+
+.container .drop .content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+
+.container .drop .content h2
+{
+    position:relative;
+    color: #333;
+    font-size: 1.9em;
+}
+
+.container .drop .content form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .drop .content form .inputBox
+{
+    position:relative;
+    width: 300px;
+    height: 40px;
+    box-shadow: inset 20px 2px 20px rgba(168, 42, 130, 0.05), 25px 35px 25px rgba(110, 18, 18, 0.05), 25px 30px 30px rgba(67, 151, 40, 0.05), inset -20px -20px 25px rgba(187, 181, 184, 0.9);
+    border-radius: 25px;
+}
+
+.container .drop .content form .inputBox::before
+{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40%;
+    height: 5px;
+    background: rgba(187, 181, 184, 0.9);
+    border-radius: 5px;
+}
+
+.container .drop .content form .inputBox input
+{
+   border: none;
+   outline: none;
+   background: transparent;
+   width: 100%;
+   font-size: 1em;
+   padding: 10px;
+}
+
+
